@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Portfolio From Figma Design</title>
+
+    <!-- Favicons -->
+    <link href="./assets/images/fav-icon/favicon.png" rel="icon" />
+
+    <!-- Bootstrap CSS File -->
+    <link
+      rel="stylesheet"
+      href="./assets/css/bootstrap-5/css/bootstrap.min.css"
+    />
+
+    <!-- Bootstrap Icon CSS File -->
+    <link
+      rel="stylesheet"
+      href="./assets/css/bootstrap-icons/font/bootstrap-icons.css"
+    />
+
+    <!-- Flat Icon CSS File -->
+    <link
+      rel="stylesheet"
+      href="./assets/css/flaticon/flaticon-uicons/css/all/all.css"
+    />
+
+    <!-- Fontawesome Kit -->
+    <script
+      src="https://kit.fontawesome.com/86bc96ac49.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Swiper CSS CDN Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11.1.4/swiper-bundle.min.css"
+    />
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="./assets/css/theme/theme.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar Starts Here -->
+    <header class="mb-5">
+      <nav class="navbar navbar-expand-lg p-3 fixed-top">
+        <div class="container nav-container">
+          <a class="navbar-brand text-uppercase" href="index.html">dr.</a>
+
+          <!-- Icons for mobile and tablet -->
+          <div class="d-flex align-items-center" id="theme-change-mobile">
+            <button class="btn border-0 bg-transparent">
+              <i class="bi bi-moon-fill dark-mode"></i>
+              <i class="bi bi-brightness-high bright-mode"></i>
+            </button>
+            <button
+              class="navbar-toggler border-0 bg-transparent"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation"
+            >
+              <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+          </div>
+
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5
+                class="offcanvas-title text-uppercase"
+                id="offcanvasNavbarLabel"
+              >
+                dr.
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul
+                class="navbar-nav justify-content-end flex-grow-1 align-items-center"
+              >
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#projects"
+                    >Projects</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#resume"
+                    >Resume</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#contact"
+                    >Contact</a
+                  >
+                </li>
+                <li class="nav-item" id="theme-change-desktop">
+                  <button class="btn border-0 bg-transparent">
+                    <i class="bi bi-moon-fill dark-mode"></i>
+                    <i class="bi bi-brightness-high bright-mode"></i>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Navigation Bar Ends Here -->
+
+    <!-- About Me Section Starts Here -->
+    <section>
+      <div class="container section-container">
+        <div class="about-me-container">
+          <p class="mb-0">
+            <small>Hey, I’m</small>
+          </p>
+          <h1 class="name">Darlene Robertson</h1>
+          <p class="about-short-summary">
+            I'm a software engineer based in Toronto, Canada and also a
+            communication and journalism student. I enjoy creating things that
+            live on the internet, whether that be websites, applications, or
+            anything in between. I have been freelancing for a year now while
+            studying at the university and I've manage to gain a decent amount
+            of experience and valuable knowledge from all different kinds of
+            fields throughout my projects/work.
+          </p>
+          <div class="d-flex gap-3 align-items-center">
+            <p class="mb-0">Say Hi</p>
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Me Section Ends Here -->
+
+    <!-- Experience Section Starts Here -->
+    <section>
+      <div class="container section-container">
+        <div class="experience-section-container">
+          <h3 class="section-title">experience</h3>
+          <div>
+            <div class="experience-details-container column-margin">
+              <div class="experience-details">
+                <div class="experience-summary">
+                  <div>
+                    <h4 class="position-name">Frontend Engineer (Remote)</h4>
+                    <h6 class="company-name">Selfbook / US - New York</h6>
+                  </div>
+                  <div class="time-duration">
+                    <p class="mb-0">Jul 2021 - Present</p>
+                  </div>
+                </div>
+                <ul class="responsibilites">
+                  <li>
+                    Developing screens and UI components for the web application
+                    using React and Tailwind.
+                  </li>
+                  <li>
+                    Fixing UI issues and integrating backend APIs with Redux
+                    Saga.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="experience-details-container column-margin">
+              <div class="experience-details">
+                <div class="experience-summary">
+                  <div>
+                    <h4 class="position-name">Software Developer (Remote)</h4>
+                    <h6 class="company-name">Wevoz / Italy</h6>
+                  </div>
+                  <div class="time-duration">
+                    <p class="mb-0">Jun 2021 - Present</p>
+                  </div>
+                </div>
+                <ul class="responsibilites">
+                  <li>
+                    Developing mobile and web applications using React and React
+                    Native.
+                  </li>
+                  <li>
+                    Developing web scraping bots using Python and Selenium.
+                  </li>
+                  <li>
+                    Helping with PHP backend tasks and occasionally working with
+                    different programming languages.
+                  </li>
+                  <li>
+                    Consulting on frontend tech stack and integrating multiple
+                    external API’s across all platforms.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="experience-details-container column-margin">
+              <div class="experience-details">
+                <div class="experience-summary">
+                  <div>
+                    <h4 class="position-name">
+                      Frontend Engineer (Contractor)
+                    </h4>
+                    <h6 class="company-name">FreeBeings</h6>
+                  </div>
+                  <div class="time-duration">
+                    <p class="mb-0">Mar 2021 - Aug 2021</p>
+                  </div>
+                </div>
+                <ul class="responsibilites">
+                  <li>
+                    Working on web applications and occasionally leading the
+                    development team.
+                  </li>
+                  <li>
+                    Using React and integrating external APIs with the HIVE
+                    blockchain.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="experience-details-container column-margin">
+              <div class="experience-details">
+                <div class="experience-summary">
+                  <div>
+                    <h4 class="position-name">
+                      Frontend Developer (In Office)
+                    </h4>
+                    <h6 class="company-name">TDF / Algeria</h6>
+                  </div>
+                  <div class="time-duration">
+                    <p class="mb-0">Feb 2021 - Mar 2021</p>
+                  </div>
+                </div>
+                <ul class="responsibilites">
+                  <li>
+                    Made landing pages and web applications collaborating with
+                    the back-end engineers of the team.
+                  </li>
+                  <li>
+                    Convert designs into real world applications and pages using
+                    multiple front-end technologies.
+                  </li>
+                  <li>&nbsp;Frequently working on e-commerce projects.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="experience-details-container column-margin">
+              <div class="experience-details">
+                <div class="experience-summary">
+                  <div>
+                    <h4 class="position-name">Frontend Engineer (Freelance)</h4>
+                    <h6 class="company-name">Upwork</h6>
+                  </div>
+                  <div class="time-duration">
+                    <p class="mb-0">May 2021 - Aug 2021</p>
+                  </div>
+                </div>
+                <ul class="responsibilites">
+                  <li>
+                    Successfully completed numerous frontend jobs and high
+                    availability projects for clients which all have 5-star
+                    ratings and great feedback as well in a short amount of time
+                    which led me to get veri!ed on Upwork with an 100% job
+                    success and more than 4K$ earnings and top rated badge.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="experience-details-container column-margin">
+              <div class="experience-details">
+                <div class="experience-summary">
+                  <div>
+                    <h4 class="position-name">Software Developer (Remote)</h4>
+                    <h6 class="company-name">Shoppy</h6>
+                  </div>
+                  <div class="time-duration">
+                    <p class="mb-0">Nov 2018 - Mar 2020</p>
+                  </div>
+                </div>
+                <ul class="responsibilites">
+                  <li>
+                    Worked on various client-side dashboard and payment
+                    components from designs and site features using Vue and Nuxt
+                    alongside integrating backend APIs.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Experience Section Ends Here -->
+
+    <section>
+      <div class="container section-container">
+        <div class="section-breaker"></div>
+      </div>
+    </section>
+
+    <!-- Sample Projects Starts Here -->
+    <section>
+      <div class="container section-container">
+        <div class="row">
+          <div class="col-12 column-margin">
+            <h3 class="section-title">featured projects</h3>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 column-margin">
+            <div class="card bg-transparent border-0">
+              <div class="sample-project-container">
+                <div class="sample-project-image">
+                  <img
+                    src="./assets/images/sample-work/Sugar-Cream.png"
+                    alt="Sample Project 01"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="sample-project-description">
+                  <div class="project-description-header">
+                    <div class="project-title mb-1">
+                      <h3>IntenseProxy</h3>
+                      <div class="project-links">
+                        <a href="#">
+                          <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="#">
+                          <i class="fa-solid fa-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="project-summary">
+                      <p class="mb-2">
+                        Proxy provider website including authentication,
+                        dashboard and dynamic features
+                      </p>
+                      <ul class="project-tools">
+                        <li>React</li>
+                        <li>Bootstrap</li>
+                        <li>Styled Components</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 column-margin">
+            <div class="card bg-transparent border-0">
+              <div class="sample-project-container">
+                <div class="sample-project-image">
+                  <img
+                    src="./assets/images/sample-work/Cold-Breeze-1.png"
+                    alt="Sample Project 02"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="sample-project-description">
+                  <div class="project-description-header">
+                    <div class="project-title mb-1">
+                      <h3>$AAPE Coin</h3>
+                      <div class="project-links">
+                        <a href="#">
+                          <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="#">
+                          <i class="fa-solid fa-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="project-summary">
+                      <p class="mb-2">Site for a BSC based coin called $AAPE</p>
+                      <ul class="project-tools">
+                        <li>Vue</li>
+                        <li>Nuxt</li>
+                        <li>Netlify</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 column-margin">
+            <div class="card bg-transparent border-0">
+              <div class="sample-project-container">
+                <div class="sample-project-image">
+                  <img
+                    src="./assets/images/sample-work/Earth.png"
+                    alt="Sample Project 03"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="sample-project-description">
+                  <div class="project-description-header">
+                    <div class="project-title mb-1">
+                      <h3>Blockchain Explorer; Hive Attention Tokens</h3>
+                      <div class="project-links">
+                        <a href="#">
+                          <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="#">
+                          <i class="fa-solid fa-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="project-summary">
+                      <p class="mb-2">
+                        Sidechain explorer open source project (block explorer)
+                        for transactions.
+                      </p>
+                    </div>
+                    <ul class="project-tools">
+                      <li>React</li>
+                      <li>TailwindCSS</li>
+                      <li>Context API</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 column-margin">
+            <div class="card bg-transparent border-0">
+              <div class="sample-project-container">
+                <div class="sample-project-image">
+                  <img
+                    src="./assets/images/sample-work/Sweet-Rain.png"
+                    alt="Sample Project 04"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="sample-project-description">
+                  <div class="project-description-header">
+                    <div class="project-title mb-1">
+                      <h3>GitProfile</h3>
+                      <div class="project-links">
+                        <a href="#">
+                          <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="#">
+                          <i class="fa-solid fa-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="project-summary">
+                      <p class="mb-2">
+                        A nicer look to Github profiles using features such as
+                        user search, authentication using Firebase and charts
+                        using the GitHub API.
+                      </p>
+                    </div>
+                    <ul class="project-tools">
+                      <li>React</li>
+                      <li>Redux</li>
+                      <li>Firebase</li>
+                      <li>GitHub API</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 column-margin">
+            <div class="card bg-transparent border-0">
+              <div class="sample-project-container">
+                <div class="sample-project-image">
+                  <img
+                    src="./assets/images/sample-work/Cold-Breeze-1.png"
+                    alt="Sample Project 05"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="sample-project-description">
+                  <div class="project-description-header">
+                    <div class="project-title mb-1">
+                      <h3>MovieDB</h3>
+                      <div class="project-links">
+                        <a href="#">
+                          <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="#">
+                          <i class="fa-solid fa-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="project-summary">
+                      <p class="mb-2">
+                        TV application, displays different categories of
+                        movies/shows (popular, in theaters, trending etc)
+                        alongside a search option using TheMovieDB API for the
+                        data
+                      </p>
+                    </div>
+                    <ul class="project-tools">
+                      <li>React.js</li>
+                      <li>Redux</li>
+                      <li>TheMovieDB API</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 column-margin">
+            <div class="card bg-transparent border-0">
+              <div class="sample-project-container">
+                <div class="sample-project-image">
+                  <img
+                    src="./assets/images/sample-work/Ice-Cream.png"
+                    alt="Sample Project 06"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="sample-project-description">
+                  <div class="project-description-header">
+                    <div class="project-title mb-1">
+                      <h3>Soundify</h3>
+                      <div class="project-links">
+                        <a href="#">
+                          <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="#">
+                          <i class="fa-solid fa-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="project-summary">
+                      <p class="mb-2">
+                        Music search application, displays informations about
+                        artists such as albums, biography, songs that are
+                        available on youtube and much more using TheAudioDB API
+                      </p>
+                    </div>
+                    <ul class="project-tools">
+                      <li>Vue.js</li>
+                      <li>Vuex</li>
+                      <li>The AudioDB API</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 column-margin">
+            <div class="card bg-transparent border-0">
+              <div class="sample-project-container">
+                <div class="sample-project-image">
+                  <img
+                    src="./assets/images/sample-work/Red-Sun.png"
+                    alt="Sample Project 07"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="sample-project-description">
+                  <div class="project-description-header">
+                    <div class="project-title mb-1">
+                      <h3>Mu6icbot</h3>
+                      <div class="project-links">
+                        <a href="#">
+                          <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="#">
+                          <i class="fa-solid fa-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="project-summary">
+                      <p class="mb-2">
+                        Discord music bot using Node.js and Discord's API
+                        library to play music through YouTube, added Genius API
+                        making the bot capable to pull the lyrics for the
+                        current playing song
+                      </p>
+                    </div>
+                    <ul class="project-tools">
+                      <li>Discord Library</li>
+                      <li>Node.js</li>
+                      <li>Genius API</li>
+                      <li>Youtube API</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Sample Projects Ends Here -->
+
+    <section>
+      <div class="container section-container">
+        <div class="section-breaker"></div>
+      </div>
+    </section>
+
+    <!-- Footer Starts Here -->
+    <footer>
+      <div class="container section-container">
+        <div class="footer-content">
+          <h3 class="section-title mb-0">contact</h3>
+          <div class="social-sites">
+            <button>
+              <div
+                class="d-flex align-items-center justify-content-center gap-1"
+              >
+                <i class="fa-solid fa-paper-plane"></i>
+                <span>Send an Email</span>
+              </div>
+            </button>
+            <button>
+              <div
+                class="d-flex align-items-center justify-content-center gap-1"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+                <span>LinkedIn</span>
+              </div>
+            </button>
+            <button>
+              <div
+                class="d-flex align-items-center justify-content-center gap-1"
+              >
+                <i class="fa-brands fa-github"></i>
+                <span>GitHub</span>
+              </div>
+            </button>
+            <button>
+              <div
+                class="d-flex align-items-center justify-content-center gap-1"
+              >
+                <i class="fa-brands fa-upwork"></i>
+                <span>Upwork</span>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Ends Here -->
+
+    <!-- jQuery JS File -->
+    <script src="./assets/js/jquery/jquery.min.js"></script>
+
+    <!-- Popper JS CDN -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"
+      integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Bootstrap JS File -->
+    <script src="./assets/js/bootstrap-5/js/bootstrap.min.js"></script>
+
+    <!-- Theme JS -->
+    <script src="./assets/js/theme/theme.js"></script>
+
+    <!-- Page JS -->
+    <script>
+      $(document).ready(function () {
+        $(".dark-mode").click(function () {
+          $("body").addClass("dark-theme");
+          $(".bright-mode").show();
+          $(".dark-mode").hide();
+        });
+
+        $(".bright-mode").click(function () {
+          $("body").removeClass("dark-theme");
+          $(".dark-mode").show();
+          $(".bright-mode").hide();
+        });
+      });
+    </script>
+  </body>
+</html>
