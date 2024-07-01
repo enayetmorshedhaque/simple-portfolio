@@ -6,7 +6,7 @@
     <title>Simple Portfolio From Figma Design</title>
 
     <!-- Favicons -->
-    <link href="./assets/images/fav-icon/favicon.png" rel="icon" />
+    <link href="./assets/images/fav-icon/favicon.ico" rel="icon" />
 
     <!-- Bootstrap CSS File -->
     <link
@@ -32,12 +32,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- Swiper CSS CDN Link -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11.1.4/swiper-bundle.min.css"
-    />
-
     <!-- Theme CSS -->
     <link rel="stylesheet" href="./assets/css/theme/theme.css" />
   </head>
@@ -49,21 +43,23 @@
           <a class="navbar-brand text-uppercase" href="index.html">dr.</a>
 
           <!-- Icons for mobile and tablet -->
-          <div class="d-flex align-items-center" id="theme-change-mobile">
-            <button class="btn border-0 bg-transparent">
-              <i class="bi bi-moon-fill dark-mode"></i>
-              <i class="bi bi-brightness-high bright-mode"></i>
-            </button>
-            <button
-              class="navbar-toggler border-0 bg-transparent"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasNavbar"
-              aria-controls="offcanvasNavbar"
-              aria-label="Toggle navigation"
-            >
-              <i class="fa-solid fa-bars-staggered"></i>
-            </button>
+          <div id="theme-change-mobile">
+            <div class="d-flex align-items-center">
+              <button class="btn border-0 bg-transparent">
+                <i class="bi bi-moon-fill dark-mode"></i>
+                <i class="bi bi-brightness-high bright-mode"></i>
+              </button>
+              <button
+                class="navbar-toggler border-0 bg-transparent"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar"
+                aria-label="Toggle navigation"
+              >
+                <i class="fa-solid fa-bars-staggered"></i>
+              </button>
+            </div>
           </div>
 
           <div
@@ -81,10 +77,12 @@
               </h5>
               <button
                 type="button"
-                class="btn-close"
+                class="btn-close custom-color"
                 data-bs-dismiss="offcanvas"
                 aria-label="Close"
-              ></button>
+              >
+                <i class="fa-solid fa-xmark"></i>
+              </button>
             </div>
             <div class="offcanvas-body">
               <ul
@@ -655,6 +653,9 @@
     <!-- jQuery JS File -->
     <script src="./assets/js/jquery/jquery.min.js"></script>
 
+    <!-- Bootstrap JS File -->
+    <script src="./assets/js/bootstrap-5/js/bootstrap.min.js"></script>
+
     <!-- Popper JS CDN -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"
@@ -663,27 +664,7 @@
       referrerpolicy="no-referrer"
     ></script>
 
-    <!-- Bootstrap JS File -->
-    <script src="./assets/js/bootstrap-5/js/bootstrap.min.js"></script>
-
     <!-- Theme JS -->
     <script src="./assets/js/theme/theme.js"></script>
-
-    <!-- Page JS -->
-    <script>
-      $(document).ready(function () {
-        $(".dark-mode").click(function () {
-          $("body").addClass("dark-theme");
-          $(".bright-mode").show();
-          $(".dark-mode").hide();
-        });
-
-        $(".bright-mode").click(function () {
-          $("body").removeClass("dark-theme");
-          $(".dark-mode").show();
-          $(".bright-mode").hide();
-        });
-      });
-    </script>
   </body>
 </html>
