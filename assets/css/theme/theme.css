@@ -343,6 +343,10 @@ ul.project-tools li:not(:last-child)::after {
     align-items: start !important;
   }
 
+  #theme-change-mobile .bright-mode {
+    display: none;
+  }
+
   /* About Me Style */
   .name {
     font-size: 55px;
@@ -391,6 +395,10 @@ ul.project-tools li:not(:last-child)::after {
 
   ul.navbar-nav {
     align-items: start !important;
+  }
+
+  #theme-change-mobile .bright-mode {
+    display: none;
   }
 
   /* About Me Style */
@@ -455,6 +463,10 @@ ul.project-tools li:not(:last-child)::after {
 
   .offcanvas.offcanvas-end {
     width: 75% !important;
+  }
+
+  #theme-change-mobile .bright-mode {
+    display: none;
   }
 
   ul.navbar-nav {
