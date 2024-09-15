@@ -8,7 +8,7 @@ Portfolio Figma UI Design File: [Click Here](<https://www.figma.com/design/ECaFW
 
 ## Live Site
 
-You can [Visit Here](https://simple-portfoilo-figma.netlify.app/) to view the project live.
+You can [Visit Here](https://simple-portfolio-figma.netlify.app/) to view the project live.
 
 ## Technologies Used
 
